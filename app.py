@@ -11,7 +11,7 @@ def is_authenticated(username, password):
 
 @app.route('/')
 def index():
-    return app.send_static_file('login.html')
+    return app.send_static_file('index.html')
 
 @app.route('/login', methods=['POST'])
 def login():
